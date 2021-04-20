@@ -12,28 +12,37 @@ public class Cassett implements AnalogAlbum {
     }
 
     public String play() {
-        // TODO Auto-generated method stub
-        return null;
+        if (currSong > songs.size()) {
+            return "At the end of the cassett you need to rewind";
+        }
+        return "Playing song "+currSong+": "+songs.get(currSong);
     }
 
     public String rewind() {
-        // TODO Auto-generated method stub
-        return null;
+        if (currSong == 0) {
+            return "Fully Re-Wound";
+        }
+        currSong--;
+        return "Rewinding to "+currSong+1;
     }
 
     public String ffwd() {
-        // TODO Auto-generated method stub
-        return null;
+        if (currSong == songs.size()) {
+            return "At the end of cassett you need to rewind";
+        }
+        currSong++;
+        if (currSong == songs.size()) {
+            return "Forwarded to the end of cassett";
+        }
+        return "Forwarding to song "+currSong+1;
     }
 
     public String pause() {
-        // TODO Auto-generated method stub
-        return null;
+        return "pausing";
     }
 
     public String stopEject() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Stopping cassett and ejecting";
     }
     
 }
