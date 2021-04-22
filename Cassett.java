@@ -15,7 +15,8 @@ public class Cassett implements AnalogAlbum {
         if (currSong > songs.size()) {
             return "At the end of the cassett you need to rewind";
         }
-        return "Playing song "+currSong+": "+songs.get(currSong);
+        currSong++;
+        return "Playing song "+(currSong)+": "+songs.get(currSong-1);
     }
 
     public String rewind() {
@@ -23,7 +24,7 @@ public class Cassett implements AnalogAlbum {
             return "Fully Re-Wound";
         }
         currSong--;
-        return "Rewinding to "+currSong+1;
+        return "Rewinding to "+(currSong+1);
     }
 
     public String ffwd() {
@@ -34,7 +35,7 @@ public class Cassett implements AnalogAlbum {
         if (currSong == songs.size()) {
             return "Forwarded to the end of cassett";
         }
-        return "Forwarding to song "+currSong+1;
+        return "Forwarding to song "+(currSong+1);
     }
 
     public String pause() {

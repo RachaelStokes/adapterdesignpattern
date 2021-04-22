@@ -18,28 +18,36 @@ public class CD implements DigitalAlbum{
     }
 
     public String playSong(int num) {
-        // TODO Auto-generated method stub
-        return null;
+        if (currSong > songs.size()) {
+            return "Not a valid song number";
+        }
+        currSong++;
+        return "Playing "+songs.get(currSong-1);
     }
 
     public String prevSong() {
-        // TODO Auto-generated method stub
-        return null;
+        if(currSong == 0) {
+            return "Skipping back and playing "+songs.get(currSong);
+        }
+        currSong--;
+        return "Skipping back and playing "+songs.get(currSong-1);
     }
 
     public String nextSong() {
-        // TODO Auto-generated method stub
-        return null;
+        if (currSong+1 > songs.size()) {
+            currSong = 1;
+            return "Playing: "+currSong+": "+songs.get(currSong-1);
+        }
+        currSong++;
+        return "Playing: "+currSong+": "+songs.get(currSong-1);
     }
 
     public String stop() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Pausing...";
     }
 
     public String pause() {
-        // TODO Auto-generated method stub
-        return null;
+        return "Stopping cassett and ejecting";
     }
     
 }
