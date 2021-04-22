@@ -1,6 +1,4 @@
-/**
- * @author Rachael Stokes
- */
+
 public class MusicDriver {
 
 	public void RunMusicDriver() {
@@ -12,9 +10,9 @@ public class MusicDriver {
 		runAnalogAlbumFeatures(beatlesTape);
 		
 		System.out.println("\n*********** Displaying an Oasis CD ***************");
-		runAnalogAlbumFeatures(oasisTape);
+        runAnalogAlbumFeatures(oasisTape);
 	}
-	
+
 	private void runAnalogAlbumFeatures(AnalogAlbum album) {
 		System.out.println(album.play());
 		System.out.println(album.play());

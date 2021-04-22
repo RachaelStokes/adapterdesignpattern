@@ -1,5 +1,6 @@
 /**
  * @author Rachael Stokes
+ * Digital Album interface states methods that classes that implement digital album must have
  */
 public interface DigitalAlbum {
     public String playFromBeginning();
