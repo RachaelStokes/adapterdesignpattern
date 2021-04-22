@@ -1,3 +1,6 @@
+/**
+ * @author Rachael Stokes
+ */
 public class AnalogAdapter implements AnalogAlbum {
     private DigitalAlbum album;
 

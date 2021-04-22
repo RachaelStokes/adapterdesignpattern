@@ -1,3 +1,6 @@
+/**
+ * @author Rachael Stokes
+ */
 public class MusicDriver {
 
 	public void RunMusicDriver() {

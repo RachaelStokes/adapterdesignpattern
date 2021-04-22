@@ -1,3 +1,6 @@
+/**
+ * @author Rachael Stokes
+ */
 import java.util.*;
 public class Cassett implements AnalogAlbum {
     private ArrayList<String> songs = new ArrayList<String>();

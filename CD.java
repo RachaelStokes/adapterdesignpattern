@@ -1,3 +1,6 @@
+/**
+ * @author Rachael Stokes
+ */
 import java.util.*;
 public class CD implements DigitalAlbum{
     

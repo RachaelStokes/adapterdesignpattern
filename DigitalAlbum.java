@@ -1,3 +1,6 @@
+/**
+ * @author Rachael Stokes
+ */
 public interface DigitalAlbum {
     public String playFromBeginning();
     public String playSong(int num);

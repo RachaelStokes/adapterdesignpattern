@@ -1,3 +1,6 @@
+/**
+ * @author Rachael Stokes
+ */
 public interface AnalogAlbum {
     public String play();
     public String rewind();
